@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 300vh;
+    background: #030303;
+}
+
+.body-container{
+    background-color: #95c8d8;
+    width: 1200px;
+    height: 1000px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   margin-bottom: 50px;
+}
+
+.back-cover{
+    width: 400px;
+    height: 800px;
+    background-color: #89cfef;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    border: 10px solid white;
+    overflow: hidden;
+    box-shadow: -20px -20px 40px rgba(255, 255, 255, 0.658),
+                20px 20px 40px rgba(0, 0, 0, 0.5),
+                inset  -2px -2px 4px rgba(255, 255, 255, 0.541),
+                inset 2px 2px 4px rgba(0, 0, 0, 0.397);
+    /* padding-top: 30%; */
+}
+
+.back-cover p{
+    position: relative;
+    left: 30px;
+    top: 60px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.player-menu{
+    width: 50px;
+    height: 450px;
+    background-color: #89cfef;
+    position: relative;
+    left: 40px;
+    top: 70px;
+    border-radius: 35px;
+    border: 1px solid white;
+    box-shadow: -10px -10px 20px white,
+                10px 10px 20px rgba(0, 0, 0, 0.479),
+                inset  -2px -2px 4px white,
+                inset 2px 2px 4px rgba(0, 0, 0, 0.384);
+               
+}
+
+/* box-shadow: -7px -15px 20px white,
+                inset 10px 10px 5px rgba(0, 0, 0, 0.5),
+                inset 0 0 0px white; */
+
+.display-circle{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 5px solid white;
+    border-top-color: #89cfef;
+    border-left-color: rgba(145, 203, 226, 0.904);
+    background-color: #89cfef;
+    position: relative;
+    top: -350px;
+    left: 140px;
+    box-shadow: -20px -20px 40px 0px white,
+                20px 20px 40px rgb(0, 0, 0),
+                inset -2px -2px 4px white,
+                inset 2px 2px 4px rgba(0, 0, 0, 0.26);
+                
+}
+
+.playing{
+    width: 240px;
+    height: 150px;
+    border: 5px solid red;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: red;
+    border-bottom-color: red;
+    border-radius: 50%;
+    background:transparent;
+    position: relative;
+    top: 25px;
+    left: 40px; 
+    transform: rotate(160deg);
+}
+
+/* .picture-circle{
+     width: 300px;
+    height: 300px; 
+    clip-path:circle()
+} */
+
+.picture-circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid white;
+    border-color: #89cfef;
+    background-color: #89cfef;
+    position: relative;
+    top: -105px;
+    left: 45px;
+    box-shadow: -20px -20px 40px 0px white,
+                20px 20px 40px rgb(0, 0, 0),
+                inset -2px -2px 4px white,
+                inset 2px 2px 4px rgba(0, 0, 0, 0.671);                   
+} 
+
+.picture-container{
+    width: 292px;
+    height: 292px;
+    border-radius: 50%;
+    border: 2px solid red;
+    clip-path:circle()
+}
+
+ img{
+    width: 300px;
+    height: 400px;
+    background-position: center;
+    z-index: 10;
+    position: relative;
+    top: -10px;
+    right: 10px;
+} 
+
+
+.lyrics-button p{
+    position: absolute;
+    top: 690px;
+    left: 80px;
+    font-weight: bolder;
+    font-size: 15px;
+}                
+
+.lyrics-button button {
+    width: 130px;
+    height: 30px;
+    font-size: 12px;
+    background-color: #95c8d8;
+    position: absolute;
+    bottom: 30px;
+    left: 130px;
+    border: none;
+    border-radius: 40px;
+    background-color: #89cfef;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.692),
+                inset 4px 4px 8px rgba(0, 0, 0, 0.479); 
+}
+
+
+.second-container{
+    width: 400px;
+    height: 800px;
+    background-color: #89cfef;
+    margin: 0 auto;
+    position: relative;
+    left: 300px;
+    top: 300px;
+    /* top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%); */
+    border-radius: 50px;
+    border: 10px solid white;
+    overflow: hidden;
+    box-shadow: -20px -20px 40px rgba(255, 255, 255, 0.658),
+                20px 20px 40px rgba(0, 0, 0, 0.5),
+                inset  -2px -2px 4px rgba(255, 255, 255, 0.541),
+                inset 2px 2px 4px rgba(0, 0, 0, 0.397);
+}
+
+.top-button p{
+    position: relative;
+    left: 30px;
+    top: 40px;
+}
+
+.top-button button{
+    width: 35px;
+    height: 20px;
+    font-size: 12px;
+    background-color: #95c8d8;
+    position: relative;
+    left: 295px;
+    top: 20px;
+    border: none;
+    border-radius: 40px;
+    background-color: #89cfef;
+    box-shadow: inset 3px 3px 6px rgba(128, 128, 128, 0.452),
+                inset -2px -2px 4px rgba(255, 255, 255, 0.726);
+}
+
+.three-dots{
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 20px;
+    height: 0px;
+    background-color: transparent;
+    border-top: 6px dotted whitesmoke;
+    box-shadow: -1px -1px 2px white,
+                2px 2px 4px rgba(0, 0, 0, 0.2),
+                inset  0 0px white;
+}
+
+.three-circles{
+    margin-top: -60px;
+}
+
+.circle1{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #89cfef;
+    position: relative;
+    left: 40px;
+    top: 100px;
+    border: 1px solid white;
+    box-shadow:  -10px -10px 20px white,
+                10px 10px 20px rgba(0, 0, 0, 0.479),
+                inset  -2px -2px 4px white,
+                inset 2px 2px 4px rgba(0, 0, 0, 0.39);
+}
+
+.circle2{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #89cfef;
+    position: relative;
+    left: 160px;
+    top: 20px;
+    border: 1px solid white;
+    box-shadow:  -10px -10px 20px white,
+                10px 10px 20px rgba(0, 0, 0, 0.479),
+                inset  -2px -2px 4px white,
+                inset 2px 2px 4px rgba(0, 0, 0, 0.39);
+}
+
+.circle3{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #89cfef;
+    position: relative;
+    left: 270px;
+    top: -60px;
+    border: 1px solid white;
+    box-shadow:  -10px -10px 20px white,
+                10px 10px 20px rgba(0, 0, 0, 0.479),
+                inset  -2px -2px 4px white,
+                inset 2px 2px 4px rgba(0, 0, 0, 0.39);
+}
+
+
+.inner-circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: transparent;
+     position: relative;
+    left: 8px;
+    top: 8px; 
+    border: 0px solid red;
+}
+
+.inner-circle img{
+    width: 60px;
+    height: 75px;
+    clip-path: circle();
+    position: relative;
+    left: 1.5px;
+    top: -8px;
+}
+
+.playlists{
+    position: relative;
+    top: -250px;
+    left: 3px;
+}
+
+.playlists-button button{
+    width: 35px;
+    height: 20px;
+    font-size: 12px;
+    background-color: #95c8d8;
+    position: relative;
+    left: 295px;
+    top: 205px;
+    /* left: 300px;
+    top: 280px; */
+    border: none;
+    border-radius: 40px;
+    background-color: #89cfef;
+    box-shadow: inset 3px 3px 6px rgba(128, 128, 128, 0.452),
+                inset -2px -2px 4px rgba(255, 255, 255, 0.726);
+}
+
+.playlists> p{
+    position: relative;
+    top: 230px;
+    left: 35px;
+}
+
+.playlist1{
+    width: 130px;
+    height: 250px;
+    background-color: #89cfef;
+    margin: 0 auto;
+    position: absolute;
+    left: 30px;
+    top: 275px;
+    /* top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%); */
+    border-radius: 30px;
+    border: 1px solid white; 
+    overflow: hidden;
+    box-shadow:  -10px -10px 20px white,
+                10px 10px 35px rgba(0, 0, 0, 0.6),
+                inset  -2px -2px 4px white,
+                inset 2px 2px 4px rgba(0, 0, 0, 0.397);
+}
+
+.playlist1 p, .playlist2 p{
+    position: relative;
+    top: 190px;
+    
+}
+
+
+
+.playlist2{
+    width: 130px;
+    height: 250px;
+    background-color: #89cfef;
+    margin: 0 auto;
+    position: absolute;
+    left: 220px;
+    top: 275px;
+    /* top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%); */
+    border-radius: 30px;
+    border: 1px solid white; 
+    overflow: hidden;
+    box-shadow: -10px -10px 20px white,
+                10px 10px 35px rgba(0, 0, 0, 0.6),
+                inset  -2px -2px 4px white,
+                inset 2px 2px 4px rgba(0, 0, 0, 0.397);
+}
+
+.for-picture{
+    width: 90px;
+    height: 150px;
+    background-color: transparent;
+    margin: 0 auto;
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    border: 2px solid transparent;
+    border-top: 1px;
+}
+
+.for-picture img{
+    width: 90px;
+    height: 150px;
+    object-fit: cover;
+    /* object-fit:contain; */
+    max-width: 100%;
+    position: relative;
+    left: -1px;
+    top: -1px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-blend-mode:darken;
+}
+
+.news{
+    margin-top: -25px;
+}
+
+ p{
+    position: relative;
+    left: 40px;
+    top: 310px;
+    
+}
+
+.news-button button{
+    width: 35px;
+    height: 20px;
+    font-size: 12px;
+    background-color: #95c8d8;
+    position: relative;
+    left: 290px;
+    top: 290px;
+    border: none;
+    border-radius: 40px;
+    background-color: #89cfef;
+    box-shadow: inset 3px 3px 6px rgba(128, 128, 128, 0.452),
+                inset -2px -2px 4px rgba(255, 255, 255, 0.726);
+}
+
+.news1{
+    width: 300px;
+    height: 50px;
+    background-color: #89cfef;
+    position: relative;
+    left: 40px;
+    top: 320px;
+    border-radius: 35px;
+    border: 1px solid white;
+    box-shadow:  -10px -10px 20px white,
+                10px 10px 20px rgba(0, 0, 0, 0.479),
+                inset  -2px -2px 4px white,
+                inset 2px 2px 4px rgba(0, 0, 0, 0.39);
+}
+
+.news1 p, .news2 p{
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+    left: 65px;
+    text-align: left;
+}
+
+
+.news-circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: transparent;
+     position: relative;
+    left: 10px;
+    top: -20px; 
+    border: 2px solid transparent;
+}
+
+.news-circle img{
+    width: 50px;
+    height: 40px;
+    clip-path: circle();
+    position: relative;
+    left: -9px;
+    top: -8px;
+}
+
+.news2{
+    width: 300px;
+    height: 50px;
+    background-color: #89cfef;
+    position: relative;
+    left: 40px;
+    top: 350px;
+    border-radius: 35px;
+    border: 1px solid white;
+    box-shadow: -10px -10px 20px white,
+                 10px 10px 20px rgba(0, 0, 0, 0.479),
+                inset  -2px -2px 4px white,
+                inset 2px 2px 4px rgba(0, 0, 0, 0.39);
+}
